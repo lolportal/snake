@@ -72,8 +72,8 @@ int main(int argc, char **argv)
 
 	srand(time(0));
 	
-	curX = random() % SIZEX;
-	curY = random() % SIZEY;
+    curX = rand() % SIZEX;
+    curY = rand() % SIZEY;
 	enqueue(&Q, curX, curY);
 	ground[curY][curX] = 1;
 	
